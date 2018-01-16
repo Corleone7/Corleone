@@ -1,0 +1,20 @@
+一：
+
+栈的结构体定义
+#include<stdio.h>
+#define maxsize 100;
+typedef int SElemType;
+
+typedef struct {
+  SElemType top;//栈顶指针
+	SElemType data[maxsize];
+	｝SqStack;
+int main(){}
+
+二：
+
+顺序栈的进栈
+
+主要分两步：
+1：栈顶元素先自增 1，给需要进栈的元素腾出空间
+2：赋值，给对应的数组元素赋值  S->data[S->top]=e
